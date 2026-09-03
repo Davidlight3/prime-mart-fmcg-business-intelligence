@@ -1,0 +1,157 @@
+
+## Executive Summary
+
+The PrimeMart FMCG analytics solution provides an integrated view of sales, profitability, customers, products, inventory, procurement and store performance.
+
+The analysis is designed to help management identify revenue drivers, profitability opportunities, operational risks and areas requiring further investigation.
+
+---
+
+## 1. Sales Performance
+
+### Key Findings
+
+- Sales performance varies across stores, products and geographic markets.
+- Revenue concentration across high-performing products and locations creates opportunities for targeted commercial strategies.
+- Monthly and yearly trends provide visibility into changes in sales performance over time.
+
+### Business Implications
+
+Management should identify consistently high-performing stores and products and investigate the operational factors contributing to their performance.
+
+Underperforming locations should be evaluated using product mix, customer demand, inventory availability and sales-channel performance.
+
+---
+
+## 2. Profitability
+
+### Key Findings
+
+Revenue alone does not provide a complete picture of business performance.
+
+Profitability analysis combines:
+
+- Sales revenue
+- Product cost
+- Discounting
+- Profit amount
+- Profit margin
+
+### Business Implications
+
+Products generating strong revenue but weak margins should be reviewed for pricing, procurement cost and discounting opportunities.
+
+High-margin products should be considered when developing promotional and assortment strategies.
+
+---
+
+## 3. Customer Performance
+
+Customer analysis provides visibility into:
+
+- Customer segments
+- Customer value
+- Geographic distribution
+- Purchasing behaviour
+- Lifetime value
+
+### Business Implications
+
+High-value customer segments can be targeted with loyalty initiatives and personalized promotions.
+
+Lower-value or inactive customers may require targeted retention strategies.
+
+---
+
+## 4. Product Performance
+
+Product-level analysis helps management understand which categories, brands and products contribute most to revenue and profit.
+
+### Business Implications
+
+High-performing products should receive appropriate inventory coverage.
+
+Low-performing products should be reviewed for:
+
+- Demand
+- Pricing
+- Product positioning
+- Inventory levels
+- Promotion effectiveness
+
+---
+
+## 5. Inventory & Procurement
+
+Inventory analysis combines stock position with procurement activity.
+
+Key areas include:
+
+- Closing stock
+- Inventory value
+- Purchase spend
+- Reorder levels
+- Safety stock
+- Supplier lead time
+
+### Business Implications
+
+Excess inventory can tie up working capital and increase carrying costs.
+
+Inventory planning should balance product availability against the financial cost of holding stock.
+
+Supplier lead time should also be considered when determining procurement timing and safety-stock requirements.
+
+---
+
+## 6. Store Performance
+
+Store-level analysis enables management to compare locations based on:
+
+- Revenue
+- Profit
+- Sales contribution
+- Average sales per store
+- Operational performance
+
+### Business Implications
+
+High-performing stores can provide benchmarks for operational practices.
+
+Persistent underperformance should trigger deeper investigation into customer demand, product availability, store capacity and local market conditions.
+
+---
+
+## 7. Recommended Management Actions
+
+### 1. Protect High-Performing Products
+
+Maintain adequate inventory coverage for products with consistently strong demand.
+
+### 2. Improve Margin Management
+
+Review discounting and procurement costs for products with strong sales but weaker profitability.
+
+### 3. Optimize Inventory
+
+Use sales trends, reorder levels and supplier lead times to improve replenishment decisions.
+
+### 4. Strengthen Customer Retention
+
+Use customer segmentation and lifetime value to prioritize high-value customers.
+
+### 5. Benchmark Stores
+
+Identify operational practices from high-performing stores and assess whether they can be replicated elsewhere.
+
+### 6. Monitor Procurement
+
+Evaluate supplier lead time, purchase spending and supplier performance to improve procurement efficiency.
+
+---
+
+## Conclusion
+
+PrimeMart FMCG Analytics demonstrates how transactional data can be transformed into a business intelligence solution that supports commercial, operational and strategic decision-making.
+
+The combination of Python, SQL Server and Power BI provides an end-to-end analytical workflow from data generation and warehousing to visualization and business insight.
