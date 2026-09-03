@@ -1,0 +1,326 @@
+
+
+## 1. Project Overview
+
+PrimeMart FMCG Analytics is a synthetic enterprise FMCG Business Intelligence project designed to demonstrate an end-to-end analytics workflow using Python, SQL Server and Power BI.
+
+The solution covers sales, profitability, customers, products, inventory, procurement and store performance.
+
+---
+
+## 2. Data Warehouse Structure
+
+The warehouse follows a dimensional modelling approach consisting of dimension and fact tables.
+
+### Dimension Tables
+
+| Table | Description |
+|---|---|
+| DimDate | Calendar and time intelligence dimension |
+| DimCustomer | Customer demographic and commercial information |
+| DimEmployee | Employee and organizational information |
+| DimProduct | Product, pricing and inventory attributes |
+| DimStore | Store location, capacity and operating information |
+| DimSupplier | Supplier and procurement information |
+
+### Fact Tables
+
+| Table | Description |
+|---|---|
+| FactSales | Sales transactions |
+| FactPurchases | Procurement transactions |
+| FactInventory | Store-level product inventory |
+
+---
+
+## 3. DimProduct
+
+Contains the master information for products sold across PrimeMart stores.
+
+Key attributes include:
+
+- ProductID
+- SKU
+- ProductName
+- Brand
+- Category
+- SubCategory
+- UnitOfMeasure
+- PackageSize
+- UnitCost
+- SellingPrice
+- ProfitMarginPct
+- VATRate
+- ReorderLevel
+- SafetyStock
+- LaunchDate
+- Status
+
+**Primary Key:** ProductID
+
+---
+
+## 4. DimCustomer
+
+Contains customer demographic, segmentation and value information.
+
+Key attributes include:
+
+- CustomerID
+- CustomerCode
+- FirstName
+- LastName
+- Gender
+- DateOfBirth
+- Age
+- Email
+- Phone
+- State
+- City
+- CustomerSegment
+- RegistrationDate
+- LoyaltyPoints
+- PreferredPaymentMethod
+- LifetimeValue
+- Status
+
+**Primary Key:** CustomerID
+
+---
+
+## 5. DimEmployee
+
+Contains employee information and organizational attributes.
+
+Key attributes include:
+
+- EmployeeID
+- EmployeeCode
+- StoreID
+- FirstName
+- LastName
+- Gender
+- JobTitle
+- Department
+- HireDate
+- EmploymentType
+- MonthlySalary
+- Phone
+- Email
+- ReportsToEmployeeID
+- Status
+
+**Primary Key:** EmployeeID
+
+---
+
+## 6. DimStore
+
+Contains store-level operational and geographic information.
+
+Key attributes include:
+
+- StoreID
+- StoreCode
+- StoreName
+- StoreType
+- State
+- City
+- Address
+- OpeningDate
+- StoreSize
+- FloorAreaSqm
+- WarehouseCapacity
+- EmployeeCapacity
+- AnnualSalesTarget
+- ContactPhone
+- Email
+- ManagerName
+- OperatingHours
+- Status
+
+**Primary Key:** StoreID
+
+---
+
+## 7. DimSupplier
+
+Contains supplier master data and procurement attributes.
+
+Key attributes include:
+
+- SupplierID
+- SupplierCode
+- SupplierName
+- ContactPerson
+- Email
+- Phone
+- State
+- City
+- CategorySupplied
+- SupplierRating
+- PaymentTerms
+- LeadTimeDays
+- PreferredSupplier
+- CreditLimit
+- Status
+- ContractStartDate
+- ContractEndDate
+
+**Primary Key:** SupplierID
+
+---
+
+## 8. FactSales
+
+Contains transactional sales data.
+
+Key measures include:
+
+- QuantitySold
+- UnitPrice
+- GrossAmount
+- DiscountAmount
+- NetAmount
+- VATAmount
+- TotalAmount
+- CostAmount
+- ProfitAmount
+- ProfitMarginPct
+
+Additional transaction attributes include:
+
+- Customer
+- Product
+- Store
+- Employee
+- Date
+- PaymentMethod
+- SalesChannel
+- SalesStatus
+
+**Primary Key:** SalesID
+
+---
+
+## 9. FactPurchases
+
+Contains procurement transactions.
+
+Key measures include:
+
+- QuantityPurchased
+- UnitCost
+- GrossAmount
+- DiscountAmount
+- NetAmount
+- VATAmount
+- TotalAmount
+
+Additional attributes include:
+
+- Supplier
+- Product
+- Store
+- Employee
+- PaymentTerms
+- LeadTimeDays
+- PurchaseStatus
+
+**Primary Key:** PurchaseID
+
+---
+
+## 10. FactInventory
+
+Contains store-level inventory snapshots.
+
+Key measures include:
+
+- OpeningStock
+- PurchasedQty
+- SoldQty
+- ClosingStock
+- UnitCost
+- InventoryValue
+
+Additional inventory attributes include:
+
+- Product
+- Store
+- ReorderLevel
+- SafetyStock
+- StockStatus
+
+**Primary Key:** InventoryID
+
+---
+
+## 11. Relationships
+
+The warehouse contains 13 validated foreign-key relationships.
+
+### FactSales
+
+FactSales connects to:
+
+- DimDate
+- DimCustomer
+- DimProduct
+- DimStore
+- DimEmployee
+
+### FactPurchases
+
+FactPurchases connects to:
+
+- DimDate
+- DimProduct
+- DimSupplier
+- DimStore
+- DimEmployee
+
+### FactInventory
+
+FactInventory connects to:
+
+- DimDate
+- DimProduct
+- DimStore
+
+---
+
+## 12. Analytical Use Cases
+
+The model supports analysis of:
+
+- Sales performance
+- Profitability
+- Sales growth
+- Customer behaviour
+- Product performance
+- Inventory position
+- Procurement spending
+- Supplier performance
+- Store performance
+- Geographic performance
+- Operational efficiency
+
+---
+
+## 13. Data Generation
+
+The dataset is synthetic and was generated using Python.
+
+The generated environment includes approximately:
+
+- 5,000 products
+- 50,000 customers
+- 300 suppliers
+- 80 stores
+- 800 employees
+- 500,000 sales transactions
+- 150,000 purchase transactions
+- 20,000 returns
+
+The synthetic nature of the data means the project is intended for demonstration, portfolio and analytical modelling purposes rather than real-world operational decision-making.
